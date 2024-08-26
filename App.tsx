@@ -5,7 +5,6 @@ import {
   StyleSheet,
 } from "react-native";
 import { RichText, Toolbar, useEditorBridge } from "@10play/tentap-editor";
-import { WebToolbar } from "./WebToolbar";
 
 const App = () => {
   const editor = useEditorBridge({
@@ -17,7 +16,7 @@ const App = () => {
   if (Platform.OS === "web") {
     return (
       <SafeAreaView style={exampleStyles.fullScreen}>
-        <WebToolbar editor={editor} />
+        <Toolbar editor={editor} />
         <RichText editor={editor} />
       </SafeAreaView>
     );
