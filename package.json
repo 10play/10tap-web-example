@@ -9,18 +9,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@10play/react-native-web-webview": "^0.0.3",
+    "@10play/tentap-editor": "^0.5.18",
     "@expo/metro-runtime": "~3.2.3",
     "@types/react": "~18.2.79",
     "expo": "~51.0.28",
+    "expo-crypto": "~13.0.2",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
     "react-native-web": "~0.19.10",
+    "react-native-webview": "13.8.6",
     "typescript": "~5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "~19.0.1"
   },
   "private": true,
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
