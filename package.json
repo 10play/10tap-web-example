@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@10play/react-native-web-webview": "^0.0.3",
-    "@10play/tentap-editor": "^0.5.18",
+    "@10play/tentap-editor": "^0.5.19",
     "@expo/metro-runtime": "~3.2.3",
     "@types/react": "~18.2.79",
     "expo": "~51.0.28",

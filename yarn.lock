@@ -12,10 +12,10 @@
   resolved "https://registry.yarnpkg.com/@10play/react-native-web-webview/-/react-native-web-webview-0.0.3.tgz#c83255f15f10ab4b2a2c3851baded82ddee579a4"
   integrity sha512-07qO/USJe+IH+xR3bALwbLX2/2Y5VwiYhBZ5JkZugdkthFBiWs98s4duUd95ZNEaoMbdyV+xMqaibo6MOvOM6Q==
 
-"@10play/tentap-editor@^0.5.18":
-  version "0.5.18"
-  resolved "https://registry.yarnpkg.com/@10play/tentap-editor/-/tentap-editor-0.5.18.tgz#e522bc568597ce9c9a961fdb6f2e7b44416e7d28"
-  integrity sha512-FndG1YGPe9MI0WLCKaoOzSPfuRH3xsJlNqk/nHmKlf5melP9pwVkam1bPm22SPukzf4o6t3EDeV43Jo/SMC14g==
+"@10play/tentap-editor@^0.5.19":
+  version "0.5.19"
+  resolved "https://registry.yarnpkg.com/@10play/tentap-editor/-/tentap-editor-0.5.19.tgz#8773897d4d4a14327300a4ef3969f0cbff90f3ec"
+  integrity sha512-0s+bC3VUY9QLeiOc3NunYYmcdGDUOoXoXev2rDOIxY2igNHoEuVVsT9yIx4j6ej0mOOLTDDLQIpZocGH1bKdvg==
   dependencies:
     "@tiptap/extension-blockquote" "^2.2.1"
     "@tiptap/extension-bold" "^2.2.1"
