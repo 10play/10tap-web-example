@@ -26,7 +26,7 @@ const App = () => {
     <SafeAreaView style={exampleStyles.fullScreen}>
       <RichText editor={editor} />
       <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        behavior={"padding"}
         style={exampleStyles.keyboardAvoidingView}
       >
         <Toolbar editor={editor} />
