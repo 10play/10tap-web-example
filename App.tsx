@@ -1,4 +1,4 @@
-import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
+import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
 import {
   SafeAreaProvider,
   SafeAreaView,
@@ -15,7 +15,9 @@ const Editor = () => {
   if (Platform.OS === "web") {
     return (
       <SafeAreaView style={exampleStyles.fullScreen}>
-        <Toolbar editor={editor} />
+        <View style={exampleStyles.toolbarRow}>
+          <Toolbar editor={editor} />
+        </View>
         <RichText editor={editor} />
       </SafeAreaView>
     );
@@ -43,6 +45,11 @@ const App = () => (
 const exampleStyles = StyleSheet.create({
   fullScreen: {
     flex: 1,
+  },
+  // The toolbar and link bar default to flex: 1, which would share the column
+  // with the editor; in a row they only fill the width.
+  toolbarRow: {
+    flexDirection: "row",
   },
   keyboardAvoidingView: {
     position: "absolute",
