@@ -1,12 +1,11 @@
+import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
 import {
+  SafeAreaProvider,
   SafeAreaView,
-  KeyboardAvoidingView,
-  Platform,
-  StyleSheet,
-} from "react-native";
+} from "react-native-safe-area-context";
 import { RichText, Toolbar, useEditorBridge } from "@10play/tentap-editor";
 
-const App = () => {
+const Editor = () => {
   const editor = useEditorBridge({
     autofocus: true,
     avoidIosKeyboard: true,
@@ -34,6 +33,12 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
+const App = () => (
+  <SafeAreaProvider>
+    <Editor />
+  </SafeAreaProvider>
+);
 
 const exampleStyles = StyleSheet.create({
   fullScreen: {
